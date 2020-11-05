@@ -87,7 +87,7 @@ and it is the preferred way implement signature storage in registries.
 
 See https://github.com/openshift/openshift-docs/pull/3556 for the upstream documentation of the API.
 
-To read the signature, any user with access to an image can use the `/extensions/v2/…/signatures/…`
+To read the signature, any user with access to an image can use the `/extensions/v2/<namespaces>/signatures/<digest>`
 path to read an array of signatures.  Use only the signature objects
 which have `version` equal to `2`, `type` equal to `atomic`, and read the signature from `content`;
 ignore the other fields of the signature object.
